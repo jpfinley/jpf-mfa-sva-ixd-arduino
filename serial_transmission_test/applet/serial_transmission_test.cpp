@@ -1,19 +1,24 @@
 #define BUTTON 7
-
 #include "WProgram.h"
 void setup();
 void loop();
+int buttonValue = 0;
+
 void setup() {
   Serial.begin(9600);
   pinMode(BUTTON, INPUT);
 }
 
 void loop() {
-  if(digitalRead(BUTTON) == HIGH){
-    Serial.print(0);
+  buttonValue = digitalRead(BUTTON);
+
+  if(buttonValue == HIGH){
+    Serial.print(1);
+    delay(50);
   }
   else{
-    Serial.print(1);
+    Serial.print(0);
+    delay(50);
   }
 }
 
