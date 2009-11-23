@@ -1,7 +1,7 @@
 // Lab 01 - Turn an LED on and off with a momentary button
 // John Finley
 
-#define LED 13
+
 #define BUTTON 7
 
 int val = 0;
