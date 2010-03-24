@@ -1,5 +1,8 @@
 #define LED 9
 
+#include "WProgram.h"
+void setup();
+void loop();
 int i = 0;
 
 void setup(){
@@ -56,3 +59,16 @@ void loop(){
   analogWrite(LED, 0);
   delay(3000);
 }
+
+int main(void)
+{
+	init();
+
+	setup();
+    
+	for (;;)
+		loop();
+        
+	return 0;
+}
+
