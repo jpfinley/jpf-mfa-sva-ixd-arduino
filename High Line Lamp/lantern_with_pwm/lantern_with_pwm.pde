@@ -9,7 +9,7 @@ void setup(){
 void loop(){
 
   //give me time to retrieve the lanterns
-  delay(7000);
+  delay(10000);
   
   //stutter start effect in three and a half parts
   //(1) glow to maximum brightness
